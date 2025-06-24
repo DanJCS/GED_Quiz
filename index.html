@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Quiz Progress -->
+        <div class="progress-bar">
+            <span id="progress-text">1 / 5</span>
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quiz-container" class="quiz-container">
+            <div class="question-container">
+                <h2 id="question-text">Loading question...</h2>
+            </div>
+            
+            <div class="options-container" id="options-container">
+                <!-- Options will be populated by JavaScript -->
+            </div>
+            
+            <button id="next-btn" class="next-btn" onclick="nextQuestion()" disabled>Next Question</button>
+        </div>
+
+        <!-- Results Container -->
+        <div id="results-container" class="results-container" style="display: none;">
+            <h1>Final Results! 🎉</h1>
+            
+            <div class="results-summary">
+                <div class="score-info">
+                    <h2 id="score-text">0 correct out of 0</h2>
+                    <h3 id="percentage-text">0%</h3>
+                </div>
+                
+                <div class="star-rating" id="star-rating">
+                    <!-- Stars will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="visual-results">
+                <h3>Question Results:</h3>
+                <div id="results-grid" class="results-grid">
+                    <!-- Results boxes will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <button class="restart-btn" onclick="restartQuiz()">Take Quiz Again</button>
+        </div>
+    </div>
+
+    <!-- Modal for question details -->
+    <div id="question-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-question"></div>
+            <div id="modal-your-answer"></div>
+            <div id="modal-correct-answer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
