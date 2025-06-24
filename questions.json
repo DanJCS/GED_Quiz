@@ -1,5 +1,10 @@
 [
   {
+    "question": "Factorise $3x^2 + 15x$.",
+    "options": ["$3(x^2+5x)$", "$x(3x+15)$", "$3x(x+5)$", "Does not factorise"],
+    "answer": 2
+  },
+  {
     "question": "Factorise $x^2 + 5x + 6$.",
     "options": ["$(x+6)(x-1)$", "$(x-2)(x-3)$", "$(x+2)(x+3)$", "$(x+5)(x+1)$"],
     "answer": 2
@@ -12,6 +17,11 @@
   {
     "question": "Factorise $x^2 + 10x + 24$.",
     "options": ["$(x+12)(x+2)$", "$(x-4)(x-6)$", "$(x+8)(x+3)$", "$(x+4)(x+6)$"],
+    "answer": 3
+  },
+  {
+    "question": "Factorise $x^2 - 64$.",
+    "options": ["$(x-8)(x-8)$", "$(x+8)(x+8)$", "$(x-32)(x+2)$", "$(x-8)(x+8)$"],
     "answer": 3
   },
   {
@@ -29,6 +39,11 @@
     "options": ["$(x+7)(x-3)$", "$(x-21)(x+1)$", "$(x+21)(x-1)$", "$(x-7)(x+3)$"],
     "answer": 3
   },
+    {
+    "question": "Factorise $9x^2 - 49$.",
+    "options": ["$(3x-7)(3x+7)$", "$(3x-7)(3x-7)$", "$(9x-7)(x+7)$", "$(3x+7)(3x+7)$"],
+    "answer": 0
+  },
   {
     "question": "Factorise $3x^2 + 11x + 6$.",
     "options": ["$(3x+1)(x+6)$", "$(3x+2)(x+3)$", "$(3x-2)(x-3)$", "$(3x+6)(x+1)$"],
@@ -41,8 +56,8 @@
   },
   {
     "question": "Factorise $4x^2 - 4x - 15$.",
-    "options": ["$(2x-5)(2x+3)$", "$(2x+5)(2x-3)$", "$(4x-3)(x+5)$", "$(4x-15)(x+1)$"],
-    "answer": 0
+    "options": ["$(2x+5)(2x-3)$", "$(4x-3)(x+5)$", "$(2x-5)(2x+3)$", "$(4x-15)(x+1)$"],
+    "answer": 2
   },
   {
     "question": "Factorise $x^4 - 81$.",
