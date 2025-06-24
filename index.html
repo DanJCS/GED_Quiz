@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
         window.MathJax = {
             tex: {
                 inlineMath: [['$', '$'], ['\\(', '\\)']],
                 displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
             }
         };
     </script>
@@ -20,7 +26,12 @@
     <div class="container">
         <!-- Quiz Progress -->
         <div class="progress-bar">
-            <span id="progress-text">1 / 5</span>
+            <div class="progress-left">
+                <span id="progress-text">1 / 5</span>
+            </div>
+            <div class="progress-right">
+                <button id="cheatsheet-btn" class="cheatsheet-btn" onclick="showCheatsheet()">📚 View Cheatsheet</button>
+            </div>
         </div>
 
         <!-- Quiz Container -->
@@ -28,36 +39,36 @@
             <div class="question-container">
                 <h2 id="question-text">Loading question...</h2>
             </div>
-            
+
             <div class="options-container" id="options-container">
                 <!-- Options will be populated by JavaScript -->
             </div>
-            
+
             <button id="next-btn" class="next-btn" onclick="nextQuestion()" disabled>Next Question</button>
         </div>
 
         <!-- Results Container -->
         <div id="results-container" class="results-container" style="display: none;">
             <h1>Final Results! 🎉</h1>
-            
+
             <div class="results-summary">
                 <div class="score-info">
                     <h2 id="score-text">0 correct out of 0</h2>
                     <h3 id="percentage-text">0%</h3>
                 </div>
-                
+
                 <div class="star-rating" id="star-rating">
                     <!-- Stars will be populated by JavaScript -->
                 </div>
             </div>
-            
+
             <div class="visual-results">
                 <h3>Question Results:</h3>
                 <div id="results-grid" class="results-grid">
                     <!-- Results boxes will be populated by JavaScript -->
                 </div>
             </div>
-            
+
             <button class="restart-btn" onclick="restartQuiz()">Take Quiz Again</button>
         </div>
     </div>
@@ -69,6 +80,16 @@
             <div id="modal-question"></div>
             <div id="modal-your-answer"></div>
             <div id="modal-correct-answer"></div>
+        </div>
+    </div>
+
+    <!-- Cheatsheet Modal -->
+    <div id="cheatsheet-modal" class="modal">
+        <div class="modal-content cheatsheet-content">
+            <span class="close" onclick="closeCheatsheet()">&times;</span>
+            <div id="cheatsheet-container">
+                <!-- Cheatsheet content will be populated by JavaScript -->
+            </div>
         </div>
     </div>
 

@@ -1,0 +1,79 @@
+{
+  "title": "Algebra Cheat Sheet: Key Concepts & Methods",
+  "sections": [
+    {
+      "heading": "1. Expansion",
+      "content": "The term outside the bracket multiplies every term <em>inside</em> the bracket.",
+      "formula": "$a(b + c) = ab + ac$",
+      "example": {
+        "problem": "<strong>Expand:</strong> $4(2x - 3)$",
+        "step1": "Identify the term outside the bracket ($4$) and the terms inside ($2x$ and $-3$).",
+        "step2": "Multiply the outside term by each inside term:<br>$4 \\times 2x = 8x$<br>$4 \\times (-3) = -12$",
+        "step3": "Combine the results.",
+        "final_answer": "<strong>Answer:</strong> $8x - 12$"
+      }
+    },
+    {
+      "heading": "2. Factorisation Type 1: Factoring out the Greatest Common Factor (GCF)",
+      "content": "Identify the largest common factor (number and/or variable) shared by all terms. Divide each term by the GCF and place the GCF outside the bracket.",
+      "example": {
+        "problem": "<strong>Factorise:</strong> $6y^2 + 9y$",
+        "step1": "Find the GCF of the numerical coefficients ($6$ and $9$): $3$.",
+        "step2": "Find the GCF of the variable terms ($y^2$ and $y$): $y$.",
+        "step3": "Combine to find the overall GCF: $3y$.",
+        "step4": "Divide each original term by the GCF:<br>$\\frac{6y^2}{3y} = 2y$<br>$\\frac{9y}{3y} = 3$",
+        "step5": "Write the GCF outside the bracket, and the results of the division inside.",
+        "final_answer": "<strong>Answer:</strong> $3y(2y + 3)$"
+      }
+    },
+    {
+      "heading": "3. Factorisation Type 2: Quadratic with Leading Coefficient = 1 ($x^2 + bx + c$)",
+      "content": "Find two numbers that <strong>multiply</strong> to give 'c' (the constant term) AND <strong>add</strong> to give 'b' (the coefficient of the x term).",
+      "example": {
+        "problem": "<strong>Factorise:</strong> $x^2 + 8x + 12$",
+        "step1": "Identify $b=8$ and $c=12$.",
+        "step2": "List pairs of factors for $c=12$: $(1, 12)$, $(2, 6)$, $(3, 4)$, etc.",
+        "step3": "From these pairs, find the one that adds up to $b=8$. The correct pair is $2$ and $6$.",
+        "step4": "Write the factored form using these numbers.",
+        "final_answer": "<strong>Answer:</strong> $(x + 2)(x + 6)$"
+      }
+    },
+    {
+      "heading": "4. Factorisation Type 2 (Special Case): Difference of Two Squares ($a^2 - b^2$)",
+      "content": "Look for two perfect squares separated by a minus sign. The formula is:",
+      "formula": "$a^2 - b^2 = (a+b)(a-b)$",
+      "example": {
+        "problem": "<strong>Factorise:</strong> $49m^2 - 16$",
+        "step1": "Identify the first term as a perfect square: $49m^2 = (7m)^2$. So, $a = 7m$.",
+        "step2": "Identify the second term as a perfect square: $16 = (4)^2$. So, $b = 4$.",
+        "step3": "Apply the formula $(a+b)(a-b)$ with your identified 'a' and 'b'.",
+        "final_answer": "<strong>Answer:</strong> $(7m+4)(7m-4)$"
+      }
+    },
+    {
+      "heading": "5. Factorisation Type 3: Quadratic with Leading Coefficient &ne; 1 ($ax^2 + bx + c$)",
+      "content": "Use the Cross-Multiplication Method: Find factors for 'a' and 'c'. Cross-multiply them and sum the products. The sum must equal 'b'.",
+      "example": {
+        "problem": "<strong>Factorise:</strong> $3x^2 - 10x - 8$",
+        "step1": "List factors for $a=3$: $(1, 3)$.",
+        "step2": "List factors for $c=-8$: $(1, -8), (-1, 8), (2, -4), (-2, 4)$, etc.",
+        "step3": "Arrange factors in a cross-pattern to find a combination where the sum of cross-products equals $b=-10$. Example try:",
+        "cross_multiplication_visual": "<pre><code>  3x      2   --> (3x)( -4) = -12x\n   \\     /\n    \\   / \n     \\/\n     /\\\n    /  \\\n   /    \\\n  x      -4   --> (x)(2) = 2x\n           ----------\n           Sum = -10x  (Correct!)</code></pre>",
+        "step4": "Read the successful pairs horizontally to form the factors.",
+        "final_answer": "<strong>Answer:</strong> $(3x+2)(x-4)$"
+      }
+    },
+    {
+      "heading": "6. Solving Quadratic Equations using Factorisation Methods",
+      "content": "This uses the 'Zero Product Property': If $(A)(B) = 0$, then either $A=0$ or $B=0$.",
+      "steps": "<ol><li>Rearrange the equation to the standard form: $ax^2 + bx + c = 0$.</li><li>Factorise the quadratic expression.</li><li>Set each factor equal to zero.</li><li>Solve each resulting linear equation for $x$.</li></ol>",
+      "example": {
+        "problem": "<strong>Solve:</strong> $x^2 - 4x - 21 = 0$",
+        "step1": "Factorise the expression (Type 2): $(x+3)(x-7) = 0$.",
+        "step2": "Set each factor to zero:<br>$x+3 = 0$<br>$x-7 = 0$",
+        "step3": "Solve each part:<br>$x = -3$<br>$x = 7$",
+        "final_answer": "<strong>Solutions:</strong> $x = -3$ and $x = 7$"
+      }
+    }
+  ]
+}
