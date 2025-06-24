@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Factorise $x^2 - 9x + 20$.",
+    "options": ["$(x-4)(x-5)$", "$(x+4)(x+5)$", "$(x-2)(x-10)$", "$(x-20)(x-1)$"],
+    "answer": 0
+  },
+  {
+    "question": "Solve for $k$: $8k + 5 = 2k + 23$",
+    "options": ["$k = 2$", "$k = 18$", "$k = 3$", "$k = 4.6$"],
+    "answer": 2
+  },
+  {
+    "question": "What is the value of $\\sqrt{144}$?",
+    "options": ["10", "12", "14", "16"],
+    "answer": 1
+  },
+  {
+    "question": "Simplify: $3x + 2x - x$",
+    "options": ["$4x$", "$5x$", "$6x$", "$2x$"],
+    "answer": 0
+  },
+  {
+    "question": "If $y = 2x + 3$ and $x = 4$, what is $y$?",
+    "options": ["9", "10", "11", "12"],
+    "answer": 2
+  }
+]
