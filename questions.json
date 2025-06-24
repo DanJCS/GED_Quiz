@@ -1,27 +1,54 @@
 [
+  [
   {
-    "question": "Factorise $x^2 - 9x + 20$.",
-    "options": ["$(x-4)(x-5)$", "$(x+4)(x+5)$", "$(x-2)(x-10)$", "$(x-20)(x-1)$"],
-    "answer": 0
-  },
-  {
-    "question": "Solve for $k$: $8k + 5 = 2k + 23$",
-    "options": ["$k = 2$", "$k = 18$", "$k = 3$", "$k = 4.6$"],
+    "question": "Factorise $x^2 + 5x + 6$.",
+    "options": ["$(x+6)(x-1)$", "$(x-2)(x-3)$", "$(x+2)(x+3)$", "$(x+5)(x+1)$"],
     "answer": 2
   },
   {
-    "question": "What is the value of $\\sqrt{144}$?",
-    "options": ["10", "12", "14", "16"],
+    "question": "Factorise $x^2 + 9x + 20$.",
+    "options": ["$(x+4)(x+5)$", "$(x-4)(x-5)$", "$(x+2)(x+10)$", "$(x+20)(x-1)$"],
+    "answer": 0
+  },
+  {
+    "question": "Factorise $x^2 + 10x + 24$.",
+    "options": ["$(x+12)(x+2)$", "$(x-4)(x-6)$", "$(x+8)(x+3)$", "$(x+4)(x+6)$"],
+    "answer": 3
+  },
+  {
+    "question": "Factorise $x^2 + 3x - 10$.",
+    "options": ["$(x-5)(x+2)$", "$(x+5)(x-2)$", "$(x-10)(x-1)$", "$(x+10)(x-1)$"],
     "answer": 1
   },
   {
-    "question": "Simplify: $3x + 2x - x$",
-    "options": ["$4x$", "$5x$", "$6x$", "$2x$"],
+    "question": "Factorise $x^2 - x - 42$.",
+    "options": ["$(x-7)(x+6)$", "$(x+7)(x-6)$", "$(x-21)(x+2)$", "$(x+21)(x-2)$"],
     "answer": 0
   },
   {
-    "question": "If $y = 2x + 3$ and $x = 4$, what is $y$?",
-    "options": ["9", "10", "11", "12"],
+    "question": "Factorise $x^2 - 4x - 21$.",
+    "options": ["$(x+7)(x-3)$", "$(x-21)(x+1)$", "$(x+21)(x-1)$", "$(x-7)(x+3)$"],
+    "answer": 3
+  },
+  {
+    "question": "Factorise $3x^2 + 11x + 6$.",
+    "options": ["$(3x+1)(x+6)$", "$(3x+2)(x+3)$", "$(3x-2)(x-3)$", "$(3x+6)(x+1)$"],
+    "answer": 1
+  },
+  {
+    "question": "Factorise $5x^2 - 17x + 6$.",
+    "options": ["$(5x-6)(x-1)$", "$(5x-3)(x-2)$", "$(5x-2)(x-3)$", "$(5x-1)(x-6)$"],
+    "answer": 2
+  },
+  {
+    "question": "Factorise $4x^2 - 4x - 15$.",
+    "options": ["$(2x-5)(2x+3)$", "$(2x+5)(2x-3)$", "$(4x-3)(x+5)$", "$(4x-15)(x+1)$"],
+    "answer": 0
+  },
+  {
+    "question": "Factorise $x^4 - 81$.",
+    "options": ["$(x^2-9)(x^2-9)$", "$(x-3)^2(x+3)^2$", "$(x^2+9)(x-3)(x+3)$", "$(x^2+9)(x^2+9)$"],
     "answer": 2
   }
+]
 ]
