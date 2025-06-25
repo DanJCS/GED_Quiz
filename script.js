@@ -28,7 +28,34 @@ async function loadCheatsheet() {
 }
 
 // ==========================================================
-// FIXED MARKDOWN + MATHJAX PROCESSING
+// CALCULATOR POPUP FUNCTION
+// ==========================================================
+
+/**
+ * Opens the TI-84 Calculator in a popup window.
+ */
+function openCalculatorPopup() {
+    const url = 'https://ti84calc.com/ti84calc';
+    const windowName = 'CalculatorPopup';
+    const width = 400;
+    const height = 600;
+    const left = (window.screen.width / 2) - (width / 2);
+    const top = (window.screen.height / 2) - (height / 2);
+    const windowOptions = `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no`;
+
+    const calculatorWindow = window.open(url, windowName, windowOptions);
+
+    // Focus the popup window if it was successfully opened
+    if (calculatorWindow) {
+        calculatorWindow.focus();
+    } else {
+        // Fallback if popup was blocked
+        alert('Popup blocked! Please allow popups for this site or open the calculator manually at: ' + url);
+    }
+}
+
+// ==========================================================
+// MARKDOWN + MATHJAX PROCESSING
 // ==========================================================
 
 function processTextContent(text) {
@@ -265,7 +292,7 @@ function showQuestionModal(questionIndex) {
 }
 
 // ==========================================================
-// FIXED CHEATSHEET FUNCTION
+// CHEATSHEET FUNCTION
 // ==========================================================
 
 function showCheatsheet() {
